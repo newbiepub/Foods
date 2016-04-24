@@ -1,0 +1,104 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.gastronomen.dk/wp-content/uploads/2015/01/food.jpg") no-repeat 0px 0px / cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 800px;
+}
+
+.banner-info {
+    width: 80%;
+    margin: 6em auto 0;
+    text-align: center;
+}
+
+.banner-info h1 {
+    text-transform: capitalize;
+    font-size: 3em;
+    color: #fff;
+    margin: 0 0 2em;
+    font-weight: 600;
+    font-family: 'Alex Brush', cursive;
+}
+
+.banner-info h1 span {
+    display: block;
+    font-size: 14px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.banner-info1-grid {
+    text-align: center;
+}
+
+.banner-info1-grid img {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.banner-info1-grid h3 {
+    font-size: 2em;
+    color: #F88928;
+    margin: 1em 0 .5em;
+    text-transform: capitalize;
+    font-family: 'Alex Brush', cursive;
+}
+
+.banner-info1-grid p {
+    font-size: 14px;
+    color: #D2D0CF;
+    line-height: 1.8em;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Cabin', sans-serif;
+}
+
+/*--flexisel--*/
+
+.nbs-flexisel-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.nbs-flexisel-ul {
+    position: relative;
+    width: 9999px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nbs-flexisel-inner {
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.nbs-flexisel-item {
+    float: left;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+    line-height: 0px;
+}
+
+.nbs-flexisel-item > img {
+    cursor: pointer;
+    position: relative;
+}
+
+.author-avatar {
+    position: absolute;
+    bottom: -10px;
+    left: 130px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 26px;
+    padding: 10px 16px;
+    border-radius: 40px;
+    background-positionY: right 0 bottom 6px;
+}

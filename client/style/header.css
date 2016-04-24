@@ -1,0 +1,143 @@
+html, body {
+    font-size: 100%;
+    background: #fff;
+    font-family: 'Cabin', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+/*Header*/
+.header {
+    background: #1d1811;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    float: left;
+    height: 80px;
+    padding: 31px 0 0;
+    font-size: 3.5em;
+    line-height: 20px;
+    color: #fff !important;
+    font-family: 'Alex Brush', cursive;
+}
+
+.navbar-nav {
+    margin: 0 0 0 10em;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #f89406;
+}
+
+.navbar-nav > li > a {
+    padding: 30px 20px 0;
+}
+
+ul.nav.navbar-nav li a.active {
+    color: #f89406;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #F89422;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    min-width: 130px;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #EC6E2D;
+}
+
+.dropdown-menu > li > a:before {
+    display: none;
+}
+
+.dropdown-menu > li > a {
+    display: block !important;
+    padding: 8px 21px;
+}
+
+.login-button {
+    float: right;
+}
+
+/*Nav Effect*/
+nav.cl-effect-13 a {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #F89422;
+    background-color: transparent;
+}
+
+/* Effect 13: three circles */
+.cl-effect-13 a {
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.cl-effect-13 a::before {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: transparent;
+    content: '•';
+    text-shadow: 0 0 transparent;
+    font-size: 1.2em;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.cl-effect-13 a:hover::before,
+.cl-effect-13 a:focus::before, .cl-effect-13 a.active::before,
+.cl-effect-13 a.active:focus::before {
+    color: #f89406;
+    text-shadow: 10px 0 #f89406, -10px 0 #f89406;
+}
+
+.cl-effect-13 a:hover,
+.cl-effect-13 a:focus {
+    color: #ba7700;
+}

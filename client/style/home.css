@@ -1,0 +1,117 @@
+/* Curl Bottom Right */
+
+.hvr-curl-bottom-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.hvr-curl-bottom-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(315deg, #C7A664 45%, #B08120 50%, #D79C22 56%, #EEC675 80%);
+    box-shadow: -1px -1px 1px rgb(221, 131, 4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+}
+
+.hvr-curl-bottom-right:hover:before,
+.hvr-curl-bottom-right:focus:before,
+.hvr-curl-bottom-right:active:before {
+    width: 25px;
+    height: 25px;
+}
+
+.more a {
+    padding: 8px 40px;
+    background: #AC915A;
+    font-size: 1em;
+    color: #fff;
+    margin: 3em 0 0;
+    text-decoration: none;
+}
+
+.banner-bottom-grid h2 {
+    text-transform: capitalize;
+    font-size: 2.6em;
+    color: #F89406;
+    line-height: 1.5em;
+    margin: 0;
+    font-family: 'Alex Brush', cursive;
+}
+
+.banner-bottom,
+.newsletter-bottom,
+.contact,
+.typo,
+.events,
+.services,
+.single {
+    padding: 5em 0;
+}
+
+.banner-bottom-grid1 img {
+    margin-left: 8em;
+}
+
+.banner-bottom-grid p {
+    font-size: 14px;
+    color: #999;
+    margin: 1em 0;
+    line-height: 1.8em;
+}
+.banner-bottom-grid1 {
+    position: relative;
+}
+
+.banner-bottom-grid-11 {
+    position: relative;
+}
+
+.banner-bottom-grid-11-pos {
+    position: absolute;
+    top: 30%;
+    left: 55.5%;
+    width: 85%;
+    height: 125px;
+    background: #F3F3F3;
+}
+
+.banner-bottom-grid-11-pos p {
+    font-size: 14px;
+    color: #999;
+    margin: 4em 0 0 7em;
+    line-height: 1.8em;
+    width: 80%;
+}
+
+.banner-bottom-grids:nth-child(2) {
+    margin: 4em 0 0;
+}
+
+.banner-bottom-grid-1 h3 {
+    font-size: 2.5em;
+    text-transform: capitalize;
+    text-align: right;
+    color: #1d1811;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    line-height: 1.5em;
+}
+
+.m1 {
+    margin-left: 6em;
+}

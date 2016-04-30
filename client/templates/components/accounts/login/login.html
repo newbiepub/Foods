@@ -1,14 +1,14 @@
 <template name="login">
 
-    <div class="main main-login" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('') 0px 0px ">
+    <div class="main main-login" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Food-Wallpapers-HD-7.jpg') 0px 0px; background-size: cover; ">
         <h1 class="animated wow fadeInDown">Đăng nhập</h1>
 
         <div class="main-info animated fadeInLeftBig">
             <div class="main-info1">
-                <form>
-                    <input type="text" name="username" id="username" placeholder="Tên Đăng Nhập" required>
+                <form id="login_form">
+                    <input type="text" name="email" id="email" placeholder="Tên Đăng Nhập" required>
                     <input type="password" name="password" id="password" placeholder="Mật Khẩu" required>
-                    <input type="submit" value="Đăng Nhập">
+                    <input type="submit" value="{{i18n 'form.login_label'}}">
                 </form>
                 <p>Quên Mật Khẩu? <a href="#">Bấm vào đây</a></p>
             </div>

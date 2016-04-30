@@ -141,3 +141,124 @@ nav.cl-effect-13 a {
 .cl-effect-13 a:focus {
     color: #ba7700;
 }
+
+/********* profile details **********/
+.profile_details {
+    float: right;
+    margin: 15px 25px;
+}
+
+/*-------LOGIN STARTS HERE -------*/
+.userbox_container {
+    position: relative;
+    float: left;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.userbox {
+    display: inline-block;
+    position: relative;
+    z-index: 30;
+    cursor: pointer;
+    padding: 0 30px 0 0;
+}
+
+/* Login Button Text */
+.userbox span {
+    color: #FFF;
+    font-size: 1em;
+    display: inline-block;
+    padding: 0 0 0 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Login Box */
+.user_box_action {
+    position: absolute;
+    top: 53px;
+    right: 10px;
+    display: none;
+    z-index: 29;
+}
+
+/* Login Form */
+#form_user_action {
+    width: 200px;
+    background: #1F253D;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+}
+
+#form_user_action:after {
+    content: '';
+    position: absolute;
+    right: 40px;
+    top: -6px;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-bottom: 6px solid #1F253D;
+}
+
+#form_body {
+    padding: 15px;
+}
+
+.user_info h4 {
+    font-size: 1em;
+    color: #FFF;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.user_info h4 a {
+    color: #11A8AB;
+}
+
+.user_info ul li.profile {
+    float: left;
+}
+
+.user_info ul li.logout {
+    float: right;
+}
+
+.user_info ul li {
+    display: inline-block;
+}
+
+.user_info ul li a {
+    padding: 8px 15px;
+    color: #FFF;
+    font-size: 0.85em;
+    border: none;
+    display: block;
+    background: #50597B;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.user_info ul li a:hover, .user-info ul li.active a {
+    background: #E64C65;
+}
+
+.profile_img {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.profile_img img {
+    display: block;
+    border-radius: 3em;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -o-border-radius: 3em;
+    border: 3px solid #eee;
+}

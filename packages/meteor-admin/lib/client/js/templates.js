@@ -25,8 +25,6 @@ Template.AdminDashboardViewWrapper.destroyed = function () {
 };
 
 Template.AdminDashboardView.rendered = function () {
-    subs.subscribe("images");
-    subs.subscribe("original");
     var filter, length, table;
     table = this.$('.dataTable').DataTable();
     filter = this.$('.dataTables_filter');

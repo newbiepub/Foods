@@ -10,6 +10,7 @@ aldeed:simple-schema@1.5.3
 aldeed:tabular@1.4.2
 aldeed:template-extension@3.4.3
 allow-deny@1.0.3
+anti:i18n@0.4.3
 autoupdate@1.2.7
 babel-compiler@6.6.1
 babel-runtime@0.1.7
@@ -105,6 +106,7 @@ standard-minifier-css@1.0.5
 standard-minifier-js@1.0.5
 templating@1.1.8
 templating-tools@1.0.3
+themeteorchef:jquery-validation@1.14.0
 timmyg:wow@1.0.1
 tracker@1.0.12
 twbs:bootstrap@3.3.6

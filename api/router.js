@@ -4,8 +4,8 @@ Router.configure({
     layoutTemplate: "layout"
 });
 
-Router.route("/",{
-   template: "home",
+Router.route("/", {
+    template: "home",
     name: "home"
 });
 
@@ -14,6 +14,19 @@ Router.route("/login", {
     name: "login"
 });
 
-Router.route("/signup",{
+Router.route("/signup", {
     name: "signup"
+});
+
+Router.route("/dashboard", {
+    name: "dashboard",
+    template: "dashboard",
+    onBeforeAction: function () {
+        if (Meteor.user()) {
+            this.render();
+        } else {
+            this.render("home");
+        }
+        this.next("home");
+    }
 });

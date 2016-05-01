@@ -46,10 +46,16 @@
     <div class="join-us">
         <div class="container">
             <div class="join-us-info">
-                <h3 class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Join Us</h3>
+                {{#if currentUser}}
+                    <h3 class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Dashboard</h3>
+                    <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</p>
+                    <a class="btn join-us-button wow fadeInUp" href="/dashboard">Dashboard</a>
+                {{else}}
+                    <h3 class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Join Us</h3>
+                    <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</p>
+                    <a class="btn join-us-button wow fadeInUp" href="/signup">Join Now</a>
+                {{/if}}
 
-                <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences</p>
-                <a class="btn join-us-button" href="/signup">Join Us</a>
             </div>
         </div>
     </div>

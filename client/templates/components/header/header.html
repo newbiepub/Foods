@@ -15,49 +15,42 @@
                 </div>
                 <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                     {{#if currentUser}}
-                        <div class="profile_details">
-                            <div class="profile_img">
-                                <a href="/dashboard">
-                                    <img width="45px" height="45px" src="/images/profile_img40x40.jpg" alt="">
-                                </a>
+                    <div class="profile_details">
+                        <div class="userbox_container">
+                            <a class="userbox">
+                                <span>{{currentUser.profile.name}}</span>
+                            </a>
+                            <div class="user_box_action">
+                                <form id="form_user_action">
+                                    <fieldset id="form_body">
+                                        <div class="user_info">
+                                            <h4>
+                                                "Xin Chào",
+                                                <a href="#"> {{currentUser.profile.name}}</a>
+                                            </h4>
+                                            <ul>
+                                                <li class="profile active">
+                                                    <a href="#">Profile </a>
+                                                </li>
+                                                <li class="logout"><a href="#"> Logout</a></li>
+                                                <div class="clearfix"></div>
+                                            </ul>
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
-                            <div class="userbox_container">
-                                <a class="userbox">
-                                    <span>{{currentUser.profile.name}}</span>
-                                    <i style="display: inline-block; color: #8790AE" class="fa fa-angle-down"></i>
-                                </a>
-
-                                <div class="user_box_action">
-                                    <form id="form_user_action">
-                                        <fieldset id="form_body">
-                                            <div class="user_info">
-                                                <h4>
-                                                    "Xin Chào",
-                                                    <a href="#"> {{currentUser.profile.name}}</a>
-                                                </h4>
-                                                <ul>
-                                                    <li class="profile active">
-                                                        <a href="#">Profile </a>
-                                                    </li>
-                                                    <li class="logout"><a href="#"> Logout</a></li>
-                                                    <div class="clearfix"></div>
-                                                </ul>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="profile_img"></div>
+                    </div>
                     {{else}}
-                        <div class="login-button">
-                            <nav class="cl-effect-13" id="cl-effect-13">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="/signup">Đăng K&iacute;</a></li>
-                                    <li><a href="/login">Đăng Nhập&nbsp;</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                    <div class="login-button">
+                        <nav class="cl-effect-13" id="cl-effect-13">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/signup">Sign up</a></li>
+                                <li><a href="/login">Sign in</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     {{/if}}
                 </div>
             </nav>
